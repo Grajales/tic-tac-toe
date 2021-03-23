@@ -1,0 +1,54 @@
+@media (max-width: 576px) {
+    .container {
+      grid-template-areas:
+        "first"
+        "second"
+        "third"
+        "fourth"
+        "fifth"
+        "sixth"
+        "seventh"
+        "eighth"
+        "ninth";
+    }
+  }
+  
+  .first { grid-area: first; }
+  .second { grid-area: second; }
+  .third { grid-area: third; }
+  .fourth { grid-area: fourth; }
+  .fifth { grid-area: fifth; }
+  .sixth { grid-area: sixth; }
+  .seventh { grid-area: seventh; }
+  .eighth { grid-area: eighth; }
+  .ninth { grid-area: ninth; }
+  
+  .container {
+    display: grid;
+  
+    grid-template-areas:
+    "header header header"
+      "first second third"
+      "fourth fifth sixth"
+      "seventh eighth ninth";
+  }
+  
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid lightgreen;
+    cursor: pointer;
+  }
+  
+  .box {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(7, 10, 209);
+  }
+  header{
+    text-align: center;
+    margin: 30px;
+    font-size: 20px;
+  }
